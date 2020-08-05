@@ -1,0 +1,48 @@
+# coding: utf-8 
+# @Time    : 2020/8/4 14:11
+# @Author  : Sc
+# @Email   : song9624643@163.com
+# @File    : Promysql.py
+# @Software: PyCharm
+
+
+import mydb
+# db=pymysql.connect(host="localhost", user="root", password="17851167",database="demo1", port=3306)
+# cursor=db.cursor()
+# # sql="SELECT newstudent.sname,dorm.num FROM ( SELECT * FROM students WHERE d_id=" \
+# #     "(SELECT d_id from students WHERE sname='’‘‘∆') AND sname!='’‘‘∆') " \
+# #     "newstudent LEFT JOIN dorm ON newstudent.d_id=dorm.id;"
+#
+#
+# sql="insert into students(sname,age,class,gender) values(%s,%s,%s,%s)"
+# cursor.execute(sql,("¡ı±∏",25,"python","ƒ–"))
+# db.commit()
+#
+#
+# # for var in cursor.fetchall():
+# #     print(var)
+#
+#
+#
+# cursor.close()
+# db.close()
+
+obj= mydb.MyDB();
+sql="select *from students"
+obj.select(sql)
+# sql1="insert into students(sname,age,class,gender) values('¡ı±∏',25,'python','ƒ–')"
+# data1=obj.updata(sql1)
+# print(data1)
+
+
+
+
+
+
+
+
+
+
+
+
+
